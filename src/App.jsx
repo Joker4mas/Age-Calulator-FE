@@ -34,7 +34,7 @@ function App() {
           <h1 className="text-3xl font-bold">Age Calculator</h1>
 
           <form id="form">
-            <div className="container sm:w-36 lg:w-44  flex flex-row gap-4 lg:gap-12 justify-center my-8 mx-auto">
+            <div className="container sm:w-36 w-44  flex flex-row gap-4 lg:gap-12 justify-center my-8 mx-auto">
               <div className="flex flex-col gap-2 items-start">
                 {" "}
                 <label htmlFor="number" className={`${days > 31 && "text-rose-600",'font-bold'}`}>DAY</label>
