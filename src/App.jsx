@@ -5,6 +5,9 @@ import {
   differenceInYears,
 } from "date-fns";
 
+import Footer from './components/footer.jsx'
+
+// import {Arrow} from './assets/icon-arrow.sv'
 function App() {
   const [days, setDay] = useState("");
   const [months, setMonth] = useState("");
@@ -82,11 +85,12 @@ function App() {
                 {years > 2050 && (<small className="text-rose-600">Must be a valid Year</small>)}
               </div>
             </div>
-            <div className="relative items-center text-center px-4 py-1">
+            <div className=" relative items-center text-center px-4 py-1 ">
+              
               <hr className="border-solid border-1 border-slate-300 my-8" />
               <button
                 type="submit"
-                className="absolute p-2 top-2 right-0 rounded-full sm:text-center   bg-purple-600 text-center"
+                className="absolute p-2 top-2 right-0 rounded-full text-center   bg-purple-600 mr-4"
               >
                 <img src="/src/assets/icon-arrow.svg" alt="" />
               </button>
@@ -117,6 +121,8 @@ function App() {
             </div>
           </div>
         </div>
+
+        <Footer/>
       </div>
     </>
   );
