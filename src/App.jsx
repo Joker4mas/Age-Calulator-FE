@@ -26,18 +26,18 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="flex flex-col justify-center items-center my-12">
         <div
-          style={{ borderBottomRightRadius: 100, width: 650 }}
-          className="bg-white  rounded-2xl    mx-auto my-20 text-center items-center p-8"
+          style={{ borderBottomRightRadius: 100 }}
+          className="   bg-white  rounded-2xl text-center items-center p-8"
         >
-          <h1 className="text-2xl font-bold">Age Calculator</h1>
+          <h1 className="text-3xl font-bold">Age Calculator</h1>
 
           <form id="form">
-            <div className="container w-44  flex flex-row gap-12 justify-center my-8 mx-auto">
+            <div className="container sm:w-36 lg:w-44  flex flex-row gap-4 lg:gap-12 justify-center my-8 mx-auto">
               <div className="flex flex-col gap-2 items-start">
                 {" "}
-                <label htmlFor="number" className={`${days > 31 && "text-rose-600"}`}>DAY</label>
+                <label htmlFor="number" className={`${days > 31 && "text-rose-600",'font-bold'}`}>DAY</label>
                 <input
                   type="number"
                   id="day"
@@ -45,7 +45,7 @@ function App() {
                   placeholder="DD"
                   min="1"
                   max="31"
-                  className="w-28 p-2 text-3xl font-bold rounded-md border-solid border-2 border-slate-400"
+                  className="sm:w-14 md:w-28 p-2 text-3xl font-bold rounded-md border-solid border-2 border-slate-400"
                   value={days}
                   onChange={(e) => setDay(e.target.value)}
                 />
@@ -53,14 +53,14 @@ function App() {
               </div>
 
               <div className="flex flex-col gap-2 items-start">
-                <label htmlFor="month" className={`${months > 12 && 'text-rose-600'}`}>MONTH</label>
+                <label htmlFor="month" className={`${months > 12 && 'text-rose-600','font-bold'}`}>MONTH</label>
                 <input
                   type="number"
                   name="month"
                   placeholder="MM"
                   min="1"
                   max="12"
-                  className="w-28 text-3xl p-2 font-bold  rounded-md border-solid border-2 border-slate-400"
+                  className="sm:w-14 lg:w-28 text-3xl p-2 font-bold  rounded-md border-solid border-2 border-slate-400"
                   value={months}
                   onChange={(e) => setMonth(e.target.value)}
                 />
@@ -69,24 +69,24 @@ function App() {
               </div>
 
               <div className="flex flex-col gap-2 items-start">
-                <label htmlFor="year" className={`${years > 2050 && 'text-rose-600'}`}>YEAR</label>
+                <label htmlFor="year" className={`${years > 2050 && 'text-rose-600','font-bold'}`}>YEAR</label>
                 <input
                   type="Year"
                   name="number"
                   id="year"
                   placeholder="YYYY"
-                  className="w-28 text-3xl p-2 font-bold rounded-md  border-solid border-2 border-slate-400"
+                  className=" w-28 text-3xl p-2 font-bold rounded-md  border-solid border-2 border-slate-400"
                   value={years}
                   onChange={(e) => setYear(e.target.value)}
                 />
                 {years > 2050 && (<small className="text-rose-600">Must be a valid Year</small>)}
               </div>
             </div>
-            <div className="relative items-center text-center">
+            <div className="relative items-center text-center px-4">
               <hr className="border-solid border-1 border-slate-300 my-8" />
               <button
                 type="submit"
-                className="absolute p-2 -top-7 right-0 rounded-full bg-purple-600 text-center"
+                className="absolute p-2 -top-7 right-0 rounded-full sm:text-center   bg-purple-600 text-center"
               >
                 <img src="/src/assets/icon-arrow.svg" alt="" />
               </button>
