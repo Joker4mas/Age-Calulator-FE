@@ -82,11 +82,11 @@ function App() {
                 {years > 2050 && (<small className="text-rose-600">Must be a valid Year</small>)}
               </div>
             </div>
-            <div className="relative items-center text-center px-4">
+            <div className="relative items-center text-center px-4 py-1">
               <hr className="border-solid border-1 border-slate-300 my-8" />
               <button
                 type="submit"
-                className="absolute p-2 -top-7 right-0 rounded-full sm:text-center   bg-purple-600 text-center"
+                className="absolute p-2 top-2 right-0 rounded-full sm:text-center   bg-purple-600 text-center"
               >
                 <img src="/src/assets/icon-arrow.svg" alt="" />
               </button>
