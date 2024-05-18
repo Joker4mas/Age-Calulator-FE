@@ -95,7 +95,7 @@ function App() {
                 className=" -mt-16 md:mt-0 min-w-16 min-h-16  md:absolute p-2 md:center  md:top-2 md:right-0 rounded-full text-center   bg-purple-600 md:mr-16"
               >
     
-                <img src="../src/assets/icon-arrow.svg" alt=""  className="h-16 w-16"/>
+                <img src="./src/assets/icon-arrow.svg" alt="Arrow icon"  className="h-16 w-16"/>
               </button>
             </div>
           </form>
