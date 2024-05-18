@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center my-12">
+      <div className="flex flex-col justify-center items-center my-8">
         <div
           style={{ borderBottomRightRadius: 100 }}
           className="   bg-white  rounded-2xl text-center items-center p-8"
@@ -85,12 +85,14 @@ function App() {
                 {years > 2050 && (<small className="text-rose-600">Must be a valid Year</small>)}
               </div>
             </div>
-            <div className=" relative items-center text-center px-4 py-1 ">
-              
-              <hr className="border-solid border-1 border-slate-300 my-8" />
-              <button
+            <div className=" relative items-center text-center px-4 py-1  ">
+
+                <div>
+              <hr className="border-solid border-1 border-slate-300 my-8 w-96 ml-24" />
+                </div>            
+                <button
                 type="submit"
-                className="absolute p-2 top-2 right-0 rounded-full text-center   bg-purple-600 mr-4"
+                className="absolute p-2 top-2 right-0 rounded-full text-center   bg-purple-600 mr-16"
               >
                 <img src="/src/assets/icon-arrow.svg" alt="" />
               </button>
@@ -98,7 +100,7 @@ function App() {
           </form>
 
           {/* The logics displays here  */}
-          <div className="flex flex-col justify-center items-start text-center ">
+          <div className="flex flex-col justify-center ml-4 items-start text-center ">
             <div className="flex flex-row gap-6 font-bold italic">
               <span className="font-bold text-8xl text-purple-500">
                 {diffInYears}
